@@ -203,6 +203,7 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 .cta-container .cta-btn-container {
@@ -231,6 +232,9 @@ article {
 
 .cta-text {
   flex-basis: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .cta-text p {
