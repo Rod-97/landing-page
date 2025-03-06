@@ -11,7 +11,8 @@
 }
 
 .header,
-.header-article {
+.header-article,
+.footer {
   background-color: #1f2937;
 }
 
@@ -101,6 +102,143 @@ article {
   }
 }
 
+.games-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.games-article h1 {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.games-article ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.games-article li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.games-article span {
+  color: rgb(100, 100, 100);
+}
+
+.games-article img {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #3882f6;
+  border-radius: 10px;
+
+  &:hover {
+    border-color: darkblue;
+    cursor: pointer;
+  }
+}
+
+.quote-article {
+  background-color: #e5e7eb;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.quote-article p {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 36px;
+}
+
+.quote-article span {
+  margin-left: auto;
+  margin-right: 100px;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.cta-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.cta-container {
+  border-radius: 10px;
+  background-color: #3882f6;
+  padding: 40px 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-container .cta-btn-container {
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cta-container button {
+  background-color: #3882f6;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 40px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    color: #3882f6;
+  }
+}
+
+.cta-text {
+  flex-basis: 65%;
+}
+
+.cta-text p {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.cta-text span {
+  color: lightgray;
+  font-size: 16px;
+}
+
+.footer {
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
 @media only screen and (min-width: 1000px) {
   .header,
   article {
@@ -109,6 +247,14 @@ article {
   }
 
   .header-article {
+    flex-direction: row;
+  }
+
+  .games-article ul {
+    flex-direction: row;
+  }
+
+  .cta-container {
     flex-direction: row;
   }
 }
